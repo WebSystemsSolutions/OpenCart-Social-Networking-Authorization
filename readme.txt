@@ -1,19 +1,19 @@
 
-1. Встановити модуль Ocmod із папки ocmod  
+1. Встановити модуль Ocmod із папки ocmod.  
 
-2. Створити додаток Facebook (https://developers.facebook.com/apps/) та Google (https://console.cloud.google.com/apis/) 
+2. Створити додаток Facebook (https://developers.facebook.com/apps/) та Google (https://console.cloud.google.com/apis/). 
 
-2.1 Facebook: у вкладці App Review зробити додаток публічним
+2.1 Facebook: у вкладці App Review зробити додаток публічним.
 
-3. Прописати в налаштуваннях Адрес сайту, додаток 1,2
+3. Прописати в налаштуваннях Адрес сайту, додаток 1,2.
 
 4. Прописати ID додатка Facebook (catalog/view/javascript/oauth/config.json). 
 
-5 Прописати ID додатка Google, секретний ключ і редирект на келбек(Повернення) сайта /catalog/controller/auth/config.php
+5 Прописати ID додатка Google, секретний ключ і редирект на келбек (Повернення) сайта /catalog/controller/auth/config.php
 
-5.1 приклад : ['client_secret' => '<Секретний ключ>','client_id' => '<ID додатка>' , 'redirect_url' => '<ваш келбек>/glogin'];
+5.1 Приклад: ['client_secret' => '<Секретний ключ>','client_id' => '<ID додатка>' , 'redirect_url' => '<ваш келбек>/glogin'];
 
-5.2 Для роботи авторизації через Google потрібно зробити SEO URL auth/oauth/glogin -> glogin .  
+5.2 Для роботи авторизації через Google потрібно зробити SEO URL auth/oauth/glogin -> glogin.  
 
 6. Підключити javascript oauth.js на прикладі:
 
