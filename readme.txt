@@ -19,7 +19,6 @@
 
 <script src="/catalog/view/javascript/oauth/oauth.js"></script>
 
-
 7. Поставити кнопки на вхід на прикладі: 
 
 <input type="image" src='/image/facebook.png' alt="Submit" width="48" height="48" onclick="dix_facebook()">
@@ -27,7 +26,6 @@
 
 *Можливо створити свою кнопку використовуючи js функції для Google dix_googlePop('<келбек>', '<тайтл окна>', <висота поп арта>, <ширина поп арта>)
 *Можливо створити свою кнопку використовуючи js функції для Facebook dix_facebook()
-
 
 *Для зручності дивіться скриншоти в послідовності 1>2>3
 
