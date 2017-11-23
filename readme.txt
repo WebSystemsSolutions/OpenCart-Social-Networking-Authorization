@@ -29,7 +29,7 @@ UA
 
 *Можливо створити свою кнопку використовуючи js функції для Facebook dix_facebook()
 
-*Для зручності дивіться скриншоти в послідовності 1>2>3
+*Для зручності дивіться скриншоти в послідовності - для Google 1>2>3>4 і для Facebook 1>2
 
 *Модуль призначений для авторизації/реєстрації користувачів через соціальни мережі Google+ і Facebook.
 
@@ -65,7 +65,7 @@ Notes
 
 *You can create your own button for Facebook using  js functions dix_facebook().
 
-*For your convenience, also see the screenshots in the sequence 1>2>3.
+*For your convenience, also see the screenshots in the sequence Google 1>2>3>4 and Facebook 1>2.
 
 RU
 
@@ -100,4 +100,4 @@ RU
 
 *Создать свою кнопку для Facebook можно, используя js функции dix_facebook()
 
-*Для вашего удобства также смотрите скриншоты в последовательности 1>2>3
+*Для вашего удобства также смотрите скриншоты в последовательности - для Google 1>2>3>4 и для Facebook 1>2.
