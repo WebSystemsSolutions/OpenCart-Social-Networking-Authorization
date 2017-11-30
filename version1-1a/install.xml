@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Авторизация чсерез соиальние сети</name>
+    <code>oauth</code>
+    <version>1.1a</version>
+    <author>Díxyd</author>
+    <file path="admin/controller/common/menu.php">
+        <operation>
+            <search><![CDATA[
+            $data['text_customer'] = $this->language->get('text_customer');
+            ]]></search>
+            <add position="after"><![CDATA[
+        $data['text_customer_oauth'] = 'Авторизація через соціальни мережі';
+        ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+            $data['customer'] = $this->url->link('customer/customer', 'token=' . $this->session->data['token'], 'SSL');
+            ]]></search>
+            <add position="after"><![CDATA[
+        $data['customer_oauth'] = $this->url->link('oauth/oauth', 'token=' . $this->session->data['token'], 'SSL');
+        ]]></add>
+        </operation>
+    </file> 
+     <file path="admin/view/template/common/menu.tpl">
+        <operation>
+            <search><![CDATA[
+            <li><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>
+            ]]></search>
+            <add position="after"><![CDATA[
+        <li><a href="<?php echo $customer_oauth; ?>"><?php echo $text_customer_oauth; ?></a></li>
+        ]]></add>
+        </operation>
+    </file>   
+</modification>
