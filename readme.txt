@@ -1,6 +1,6 @@
 VERSION 2.1 
 UA
-У версії 2.1 було додано можливість налаштування авторизації через Instagram. Також було змінено алгоритм авторизації через Facebook - тепер працює через Auth2. 
+У версії 2.1 було додано можливість налаштування авторизації через Instagram. Також було змінено алгоритм авторизації через Facebook - тепер працює через OAuth 2. 
 
 Встановлення модуля
 1. Завантажити файли модуля у корінь проекту
@@ -25,7 +25,7 @@ UA
 
 ENG
 
-In Version 2.1 Instagram authorization was added. Also, Facebook authorization algorithm was changed. Now it works through Auth2.
+In Version 2.1 Instagram authorization was added. Also, Facebook authorization algorithm was changed. Now it works through OAuth 2.
 
 Installing the module
 1. Upload the module files to the project root folder
@@ -50,7 +50,7 @@ Type in the App ID and secret key in the module configurations
 
 RU
 
-В версии 2.1 было добавлена возможность настройки авторизации через Instagram. Также был изменен алгоритм авторизации через Facebook - теперь работает через Auth2.
+В версии 2.1 было добавлена возможность настройки авторизации через Instagram. Также был изменен алгоритм авторизации через Facebook - теперь работает через OAuth 2.
 
 Установка модуля
 1. Выгрузить файлы модуля в корень проекта
