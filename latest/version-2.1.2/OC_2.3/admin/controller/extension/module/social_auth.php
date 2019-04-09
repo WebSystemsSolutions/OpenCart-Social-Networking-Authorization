@@ -2,7 +2,7 @@
 class ControllerExtensionModuleSocialAuth extends Controller {
 	private $error = array();
     
-    // version 2.1.1
+    // version 2.1.2
     
 	public function index() {
 		$this->load->language('extension/module/social_auth');
@@ -19,7 +19,7 @@ class ControllerExtensionModuleSocialAuth extends Controller {
 			$this->response->redirect($this->url->link('extension/extension', 'token=' . $this->session->data['token'], 'SSL'));
 		}
 
-		$data['heading_title'] = $this->language->get('heading_title').' v-2.1.1';
+		$data['heading_title'] = $this->language->get('heading_title').' v-2.1.2';
 
 		$data['text_edit'] = $this->language->get('text_edit');
 		$data['text_enabled'] = $this->language->get('text_enabled');
