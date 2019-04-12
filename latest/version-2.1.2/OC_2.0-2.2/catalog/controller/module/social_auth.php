@@ -491,6 +491,7 @@ class ControllerModuleSocialAuth extends Controller {
     // get curl POST
     private function getTokenWithCurl($url = '',$data = array()){
         $ch = curl_init();
+        $fields = http_build_query($data);
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -498,9 +499,7 @@ class ControllerModuleSocialAuth extends Controller {
         ));
         curl_setopt($ch, CURLOPT_POST, 1); //передача данных методом POST
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //теперь curl вернет нам ответ, а не выведет
-        curl_setopt($ch, CURLOPT_POSTFIELDS, //тут переменные которые будут переданы методом POST
-            http_build_query($data)
-        );
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields );
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 40);
         curl_setopt($ch, CURLOPT_USERAGENT, 'PHP Bot');
         $data = curl_exec($ch);
