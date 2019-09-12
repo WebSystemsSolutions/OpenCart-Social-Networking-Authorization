@@ -244,7 +244,7 @@ class ControllerModuleSocialAuth extends Controller {
 
                 if($return_data['status']){
 
-                    $this->response->setOutput('<script>
+                    echo('<script>
                         window.opener.document.location = "'.$return_data['redirect'].'";
                         window.close();
                         </script>');
@@ -312,7 +312,7 @@ class ControllerModuleSocialAuth extends Controller {
 
                 if($return_data['status']){
 
-                    $this->response->setOutput('<script>
+                    echo('<script>
                         window.opener.document.location = "'.$return_data['redirect'].'";
                         window.close();
                         </script>');
@@ -380,7 +380,7 @@ class ControllerModuleSocialAuth extends Controller {
 
                 if($return_data['status']){
 
-                    $this->response->setOutput('<script>
+                    echo('<script>
                         window.opener.document.location = "'.$return_data['redirect'].'";
                         window.close();
                         </script>');
