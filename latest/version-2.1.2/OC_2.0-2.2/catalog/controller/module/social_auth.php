@@ -267,7 +267,7 @@ class ControllerModuleSocialAuth extends Controller {
         $facebook_app_id = $this->config->get('social_auth_facebook_app_id');
         $facebook_secret_key = $this->config->get('social_auth_facebook_secret_key');
 
-        $link = 'https://www.facebook.com/v3.2/dialog/oauth?client_id=' . $facebook_app_id . '&redirect_uri=' . urlencode($redirect_href) . '&auth_type=rerequest';
+        $link = 'https://www.facebook.com/v3.2/dialog/oauth?client_id=' . $facebook_app_id . '&redirect_uri=' . urlencode($redirect_href) . '&auth_type=rerequest&scope=email';
 
         if (!isset($this->request->get['code'])) {
 
